@@ -1,0 +1,908 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'display' on host 'desktop-drs' (Windows NT_amd64 version 6.2) on Sun Aug 25 16:29:58 +0800 2019
+INFO: [HLS 200-10] In directory 'G:/Desktop/cnn4'
+INFO: [HLS 200-10] Opening project 'G:/Desktop/cnn4/cnn2'.
+INFO: [HLS 200-10] Adding design file 'cnn2/conv.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'G:/Desktop/cnn4/cnn2/solution8_all'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k325tffg900-1'
+INFO: [HLS 200-10] Analyzing design file 'cnn2/conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 109.313 ; gain = 52.270
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 109.313 ; gain = 52.270
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 164.422 ; gain = 107.379
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 176.129 ; gain = 119.086
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Convolution_layer3_label1' (cnn2/conv.cpp:201) in function 'Convolution_layer3' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1.1' (cnn2/conv.cpp:138) in function 'Convolution_layer2' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Convolution_layer2_label2' (cnn2/conv.cpp:152) in function 'Convolution_layer2' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' (cnn2/conv.cpp:161) in function 'Convolution_layer2' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (cnn2/conv.cpp:110) in function 'MaxPool_layer1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (cnn2/conv.cpp:64) in function 'Convolution_layer1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Convolution_layer1_label2' (cnn2/conv.cpp:76) in function 'Convolution_layer1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-4' (cnn2/conv.cpp:90) in function 'Convolution_layer1' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'fullconnected2_label0' (cnn2/conv.cpp:254) in function 'fullconnected2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'fullconnected1_label0' (cnn2/conv.cpp:228) in function 'fullconnected1' partially with a factor of 7.
+INFO: [XFORM 203-501] Unrolling loop 'Convolution_layer3_label0' (cnn2/conv.cpp:203) in function 'Convolution_layer3' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MaxPool_layer2_label1' (cnn2/conv.cpp:181) in function 'MaxPool_layer2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1' (cnn2/conv.cpp:140) in function 'Convolution_layer2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Convolution_layer2_label3' (cnn2/conv.cpp:154) in function 'Convolution_layer2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Convolution_layer2_label0' (cnn2/conv.cpp:155) in function 'Convolution_layer2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.1.1' (cnn2/conv.cpp:163) in function 'Convolution_layer2' completely.
+INFO: [XFORM 203-501] Unrolling loop 'MaxPool_layer1_label1' (cnn2/conv.cpp:114) in function 'MaxPool_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1' (cnn2/conv.cpp:66) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1.1' (cnn2/conv.cpp:67) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Convolution_layer1_label1' (cnn2/conv.cpp:78) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Convolution_layer1_label0' (cnn2/conv.cpp:79) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1' (cnn2/conv.cpp:92) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1.1' (cnn2/conv.cpp:93) in function 'Convolution_layer1' completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein_conv1' (cnn2/conv.cpp:266) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imageout_conv1' (cnn2/conv.cpp:267) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein_conv2' (cnn2/conv.cpp:272) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imageout_conv2' (cnn2/conv.cpp:273) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein_conv3' (cnn2/conv.cpp:277) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein2' (cnn2/conv.cpp:281) in dimension 1 with a cyclic factor 7.
+INFO: [XFORM 203-101] Partitioning array 'imageout2'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'W_fc2'  in dimension 1 with a cyclic factor 10.
+INFO: [XFORM 203-101] Partitioning array 'W_fc1'  in dimension 1 with a cyclic factor 7.
+INFO: [XFORM 203-101] Partitioning array 'Wconv3'  in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'Wconv2'  in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'W2' (cnn2/conv.cpp:129) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'W22' (cnn2/conv.cpp:130) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'W1'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein_1' (cnn2/conv.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imageout_conv1' (cnn2/conv.cpp:267) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'W2' (cnn2/conv.cpp:129) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'W22' (cnn2/conv.cpp:130) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagein_1' (cnn2/conv.cpp:53) in dimension 3 completely.
+INFO: [XFORM 203-102] Partitioning array 'W1.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'W1.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'W1.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'W1.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'W1.4' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'W1.5' in dimension 1 automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:183:2) to (cnn2/conv.cpp:178:19) in function 'MaxPool_layer2'... converting 81 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:138:22) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cnn2/conv.cpp:141:8) to (cnn2/conv.cpp:141:8) in function 'Convolution_layer2'... converting 4 basic blocks.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.7[1440 x float]P.i32.i64' into 'fullconnected1'.
+INFO: [XFORM 203-11] Balancing expressions in function 'Convolution_layer2' (cnn2/conv.cpp:122)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:07 ; elapsed = 00:01:28 . Memory (MB): peak = 195.422 ; gain = 138.379
+INFO: [XFORM 203-541] Flattening a loop nest 'fullconnected1_label1' (cnn2/conv.cpp:226:47) in function 'fullconnected1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'MaxPool_layer1_label2' (cnn2/conv.cpp:109:3) in function 'MaxPool_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer3_label3' (cnn2/conv.cpp:200:48) in function 'Convolution_layer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer3_label2' (cnn2/conv.cpp:199:45) in function 'Convolution_layer3'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (cnn2/conv.cpp:137:7) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (cnn2/conv.cpp:136:6) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer2_label1' (cnn2/conv.cpp:151:48) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer2_label5' (cnn2/conv.cpp:150:46) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer2_label4' (cnn2/conv.cpp:149:45) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3' (cnn2/conv.cpp:160:7) in function 'Convolution_layer2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (cnn2/conv.cpp:63:7) in function 'Convolution_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer1_label5' (cnn2/conv.cpp:75:46) in function 'Convolution_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Convolution_layer1_label4' (cnn2/conv.cpp:74:45) in function 'Convolution_layer1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:20 ; elapsed = 00:01:42 . Memory (MB): peak = 302.902 ; gain = 245.859
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convolution_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Convolution_layer1_label4_Convolution_layer1_label5_Convolution_layer1_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 14.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 107.226 seconds; current allocated memory: 252.156 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.287 seconds; current allocated memory: 264.741 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MaxPool_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MaxPool_layer1_label2_L'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 9.913 seconds; current allocated memory: 269.666 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.996 seconds; current allocated memory: 274.127 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convolution_layer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Convolution_layer2_label4_Convolution_layer2_label1_Convolution_layer2_label2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 32.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.216 seconds; current allocated memory: 277.708 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.037 seconds; current allocated memory: 282.667 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MaxPool_layer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.438 seconds; current allocated memory: 285.345 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.071 seconds; current allocated memory: 288.804 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convolution_layer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Convolution_layer3_label2_Convolution_layer3_label3_Convolution_layer3_label1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 71.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.545 seconds; current allocated memory: 290.202 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.589 seconds; current allocated memory: 291.127 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fullconnected1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'fullconnected1_label1_fullconnected1_label0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 27.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.085 seconds; current allocated memory: 292.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.88 seconds; current allocated memory: 294.298 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fullconnected2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.206 seconds; current allocated memory: 294.865 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.434 seconds; current allocated memory: 295.471 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.656 seconds; current allocated memory: 296.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 12.697 seconds; current allocated memory: 302.619 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convolution_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_0_0' to 'Convolution_layerbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_1_0' to 'Convolution_layercud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_2_0' to 'Convolution_layerdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_3_0' to 'Convolution_layereOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_4_0' to 'Convolution_layerfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_W1_5_0' to 'Convolution_layerg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_0_0' to 'Convolution_layerhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_0_1' to 'Convolution_layeribs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_0_2' to 'Convolution_layerjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_0_3' to 'Convolution_layerkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_0_4' to 'Convolution_layerlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_1_0' to 'Convolution_layermb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_1_1' to 'Convolution_layerncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_1_2' to 'Convolution_layerocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_1_3' to 'Convolution_layerpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_1_4' to 'Convolution_layerqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_2_0' to 'Convolution_layerrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_2_1' to 'Convolution_layersc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_2_2' to 'Convolution_layertde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_2_3' to 'Convolution_layerudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_2_4' to 'Convolution_layervdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_3_0' to 'Convolution_layerwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_3_1' to 'Convolution_layerxdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_3_2' to 'Convolution_layeryd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_3_3' to 'Convolution_layerzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_3_4' to 'Convolution_layerAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_4_0' to 'Convolution_layerBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_4_1' to 'Convolution_layerCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_4_2' to 'Convolution_layerDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_4_3' to 'Convolution_layerEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_4_4' to 'Convolution_layerFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_5_0' to 'Convolution_layerGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_5_1' to 'Convolution_layerHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_5_2' to 'Convolution_layerIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_5_3' to 'Convolution_layerJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_5_4' to 'Convolution_layerKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_6_0' to 'Convolution_layerLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_6_1' to 'Convolution_layerMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_6_2' to 'Convolution_layerNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_6_3' to 'Convolution_layerOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_6_4' to 'Convolution_layerPgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_7_0' to 'Convolution_layerQgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_7_1' to 'Convolution_layerRg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_7_2' to 'Convolution_layerShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_7_3' to 'Convolution_layerThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_7_4' to 'Convolution_layerUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_8_0' to 'Convolution_layerVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_8_1' to 'Convolution_layerWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_8_2' to 'Convolution_layerXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_8_3' to 'Convolution_layerYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_8_4' to 'Convolution_layerZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_9_0' to 'Convolution_layer0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_9_1' to 'Convolution_layer1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_9_2' to 'Convolution_layer2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_9_3' to 'Convolution_layer3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_9_4' to 'Convolution_layer4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_10_0' to 'Convolution_layer5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_10_1' to 'Convolution_layer6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_10_2' to 'Convolution_layer7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_10_3' to 'Convolution_layer8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_10_4' to 'Convolution_layer9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_11_0' to 'Convolution_layerbak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_11_1' to 'Convolution_layerbbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_11_2' to 'Convolution_layerbck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_11_3' to 'Convolution_layerbdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_11_4' to 'Convolution_layerbek' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_12_0' to 'Convolution_layerbfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_12_1' to 'Convolution_layerbgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_12_2' to 'Convolution_layerbhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_12_3' to 'Convolution_layerbil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_12_4' to 'Convolution_layerbjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_13_0' to 'Convolution_layerbkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_13_1' to 'Convolution_layerbll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_13_2' to 'Convolution_layerbml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_13_3' to 'Convolution_layerbnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_13_4' to 'Convolution_layerbom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_14_0' to 'Convolution_layerbpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_14_1' to 'Convolution_layerbqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_14_2' to 'Convolution_layerbrm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_14_3' to 'Convolution_layerbsm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_14_4' to 'Convolution_layerbtn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_15_0' to 'Convolution_layerbun' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_15_1' to 'Convolution_layerbvn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_15_2' to 'Convolution_layerbwn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_15_3' to 'Convolution_layerbxn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_15_4' to 'Convolution_layerbyn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_16_0' to 'Convolution_layerbzo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_16_1' to 'Convolution_layerbAo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_16_2' to 'Convolution_layerbBo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_16_3' to 'Convolution_layerbCo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_16_4' to 'Convolution_layerbDo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_17_0' to 'Convolution_layerbEo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_17_1' to 'Convolution_layerbFp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_17_2' to 'Convolution_layerbGp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_17_3' to 'Convolution_layerbHp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_17_4' to 'Convolution_layerbIp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_18_0' to 'Convolution_layerbJp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_18_1' to 'Convolution_layerbKp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_18_2' to 'Convolution_layerbLp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_18_3' to 'Convolution_layerbMq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_18_4' to 'Convolution_layerbNq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_19_0' to 'Convolution_layerbOq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_19_1' to 'Convolution_layerbPq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_19_2' to 'Convolution_layerbQq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_19_3' to 'Convolution_layerbRq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_19_4' to 'Convolution_layerbSr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_20_0' to 'Convolution_layerbTr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_20_1' to 'Convolution_layerbUr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_20_2' to 'Convolution_layerbVr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_20_3' to 'Convolution_layerbWr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_20_4' to 'Convolution_layerbXr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_21_0' to 'Convolution_layerbYs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_21_1' to 'Convolution_layerbZs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_21_2' to 'Convolution_layerb0s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_21_3' to 'Convolution_layerb1s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_21_4' to 'Convolution_layerb2s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_22_0' to 'Convolution_layerb3s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_22_1' to 'Convolution_layerb4t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_22_2' to 'Convolution_layerb5t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_22_3' to 'Convolution_layerb6t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_22_4' to 'Convolution_layerb7t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_23_0' to 'Convolution_layerb8t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_23_1' to 'Convolution_layerb9t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_23_2' to 'Convolution_layercau' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_23_3' to 'Convolution_layercbu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_23_4' to 'Convolution_layerccu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_24_0' to 'Convolution_layercdu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_24_1' to 'Convolution_layerceu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_24_2' to 'Convolution_layercfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_24_3' to 'Convolution_layercgu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_24_4' to 'Convolution_layerchv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_25_0' to 'Convolution_layerciv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_25_1' to 'Convolution_layercjv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_25_2' to 'Convolution_layerckv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_25_3' to 'Convolution_layerclv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_25_4' to 'Convolution_layercmv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_26_0' to 'Convolution_layercnw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_26_1' to 'Convolution_layercow' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_26_2' to 'Convolution_layercpw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_26_3' to 'Convolution_layercqw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_26_4' to 'Convolution_layercrw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_27_0' to 'Convolution_layercsw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_27_1' to 'Convolution_layerctx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_27_2' to 'Convolution_layercux' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_27_3' to 'Convolution_layercvx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer1_imagein_1_27_4' to 'Convolution_layercwx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fadd_32ns_32ns_32_4_full_dsp_1' to 'cnn_fadd_32ns_32ncxx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fmul_32ns_32ns_32_3_max_dsp_1' to 'cnn_fmul_32ns_32ncyx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fcmp_32ns_32ns_1_1_1' to 'cnn_fcmp_32ns_32nczy' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'Convolution_layer1' is 6216 from HDL expression: ((1'b0 == ap_block_pp2_stage0) & (ap_enable_reg_pp2_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp2_stage0))
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32ncxx': 42 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 168 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32ncyx': 42 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mux_53_32_1_1': 28 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convolution_layer1'.
+INFO: [HLS 200-111]  Elapsed time: 12.015 seconds; current allocated memory: 326.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MaxPool_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 18 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MaxPool_layer1'.
+INFO: [HLS 200-111]  Elapsed time: 17.651 seconds; current allocated memory: 340.182 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convolution_layer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_8' to 'Convolution_layercAy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_0' to 'Convolution_layercBy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_9' to 'Convolution_layercCy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_1' to 'Convolution_layercDy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_10' to 'Convolution_layercEy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_2' to 'Convolution_layercFz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_11' to 'Convolution_layercGz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_3' to 'Convolution_layercHz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_12' to 'Convolution_layercIz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_4' to 'Convolution_layercJz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_13' to 'Convolution_layercKz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_5' to 'Convolution_layercLz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_14' to 'Convolution_layercMA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_6' to 'Convolution_layercNA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_15' to 'Convolution_layercOA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_Wconv2_7' to 'Convolution_layercPA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_0' to 'Convolution_layercQA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_1' to 'Convolution_layercRA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_2' to 'Convolution_layercSB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_3' to 'Convolution_layercTB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_4' to 'Convolution_layercUB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_5' to 'Convolution_layercVB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_6' to 'Convolution_layercWB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_7' to 'Convolution_layercXB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_8' to 'Convolution_layercYC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_9' to 'Convolution_layercZC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_10' to 'Convolution_layerc0C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_11' to 'Convolution_layerc1C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_12' to 'Convolution_layerc2C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_13' to 'Convolution_layerc3C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_14' to 'Convolution_layerc4D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_0_15' to 'Convolution_layerc5D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_0' to 'Convolution_layerc6D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_1' to 'Convolution_layerc7D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_2' to 'Convolution_layerc8D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_3' to 'Convolution_layerc9D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_4' to 'Convolution_layerdaE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_5' to 'Convolution_layerdbE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_6' to 'Convolution_layerdcE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_7' to 'Convolution_layerddE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_8' to 'Convolution_layerdeE' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'Convolution_layerdeE' is changed to 'Convolution_layerdeE_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_9' to 'Convolution_layerdfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_10' to 'Convolution_layerdgE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_11' to 'Convolution_layerdhF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_12' to 'Convolution_layerdiF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_13' to 'Convolution_layerdjF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_14' to 'Convolution_layerdkF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_1_15' to 'Convolution_layerdlF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_0' to 'Convolution_layerdmF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_1' to 'Convolution_layerdnG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_2' to 'Convolution_layerdoG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_3' to 'Convolution_layerdpG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_4' to 'Convolution_layerdqG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_5' to 'Convolution_layerdrG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_6' to 'Convolution_layerdsG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_7' to 'Convolution_layerdtH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_8' to 'Convolution_layerduH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_9' to 'Convolution_layerdvH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_10' to 'Convolution_layerdwH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_11' to 'Convolution_layerdxH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_12' to 'Convolution_layerdyH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_13' to 'Convolution_layerdzI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_14' to 'Convolution_layerdAI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_2_15' to 'Convolution_layerdBI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_0' to 'Convolution_layerdCI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_1' to 'Convolution_layerdDI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_2' to 'Convolution_layerdEI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_3' to 'Convolution_layerdFJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_4' to 'Convolution_layerdGJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_5' to 'Convolution_layerdHJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_6' to 'Convolution_layerdIJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_7' to 'Convolution_layerdJJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_8' to 'Convolution_layerdKJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_9' to 'Convolution_layerdLJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_10' to 'Convolution_layerdMK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_11' to 'Convolution_layerdNK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_12' to 'Convolution_layerdOK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_13' to 'Convolution_layerdPK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_14' to 'Convolution_layerdQK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_3_15' to 'Convolution_layerdRK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_0' to 'Convolution_layerdSL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_1' to 'Convolution_layerdTL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_2' to 'Convolution_layerdUL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_3' to 'Convolution_layerdVL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_4' to 'Convolution_layerdWL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_5' to 'Convolution_layerdXL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_6' to 'Convolution_layerdYM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_7' to 'Convolution_layerdZM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_8' to 'Convolution_layerd0M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_9' to 'Convolution_layerd1M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_10' to 'Convolution_layerd2M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_11' to 'Convolution_layerd3M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_12' to 'Convolution_layerd4N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_13' to 'Convolution_layerd5N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_14' to 'Convolution_layerd6N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_4_15' to 'Convolution_layerd7N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_0' to 'Convolution_layerd8N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_1' to 'Convolution_layerd9N' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_2' to 'Convolution_layereaO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_3' to 'Convolution_layerebO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_4' to 'Convolution_layerecO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_5' to 'Convolution_layeredO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_6' to 'Convolution_layereeO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_7' to 'Convolution_layerefO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_8' to 'Convolution_layeregO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_9' to 'Convolution_layerehP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_10' to 'Convolution_layereiP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_11' to 'Convolution_layerejP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_12' to 'Convolution_layerekP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_13' to 'Convolution_layerelP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_14' to 'Convolution_layeremP' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer2_W2_5_15' to 'Convolution_layerenQ' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'Convolution_layer2' is 13774 from HDL expression: ((1'b0 == ap_block_pp1_stage0_11001) & (1'b1 == ap_CS_fsm_pp1_stage0))
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32ncxx': 48 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32ncyx': 48 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mux_1632_32_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convolution_layer2'.
+INFO: [HLS 200-111]  Elapsed time: 8.215 seconds; current allocated memory: 352.286 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MaxPool_layer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MaxPool_layer2'.
+INFO: [HLS 200-111]  Elapsed time: 6.984 seconds; current allocated memory: 360.459 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convolution_layer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_0' to 'Convolution_layereoQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_1' to 'Convolution_layerepQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_2' to 'Convolution_layereqQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_3' to 'Convolution_layererQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_4' to 'Convolution_layeresQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_5' to 'Convolution_layeretR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_6' to 'Convolution_layereuR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_7' to 'Convolution_layerevR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_8' to 'Convolution_layerewR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_9' to 'Convolution_layerexR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_10' to 'Convolution_layereyR' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_11' to 'Convolution_layerezS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_12' to 'Convolution_layereAS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_13' to 'Convolution_layereBS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_14' to 'Convolution_layereCS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_Wconv3_15' to 'Convolution_layereDS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Convolution_layer3_bias_conv3' to 'Convolution_layereES' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_mac_muladd_3ns_15ns_15s_17_1_1' to 'cnn_mac_muladd_3neFT' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'Convolution_layer3' is 7321 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32ncxx': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32ncyx': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mac_muladd_3neFT': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convolution_layer3'.
+INFO: [HLS 200-111]  Elapsed time: 5.928 seconds; current allocated memory: 366.167 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fullconnected1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_bias1' to 'fullconnected1_bieGT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_6' to 'fullconnected1_W_eHT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_0' to 'fullconnected1_W_eIT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_1' to 'fullconnected1_W_eJT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_2' to 'fullconnected1_W_eKT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_3' to 'fullconnected1_W_eLT' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_4' to 'fullconnected1_W_eMU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected1_W_fc1_5' to 'fullconnected1_W_eNU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_urem_14ns_4ns_4_18_1' to 'cnn_urem_14ns_4nseOU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_mul_mul_16ns_14ns_30_1_1' to 'cnn_mul_mul_16ns_ePU' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32ncxx': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32ncyx': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mul_mul_16ns_ePU': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mux_732_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_urem_14ns_4nseOU': 7 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fullconnected1'.
+INFO: [HLS 200-111]  Elapsed time: 2.209 seconds; current allocated memory: 369.948 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fullconnected2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_bias2' to 'fullconnected2_bieQU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_0' to 'fullconnected2_W_eRU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_1' to 'fullconnected2_W_eSV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_2' to 'fullconnected2_W_eTV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_3' to 'fullconnected2_W_eUV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_4' to 'fullconnected2_W_eVV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_5' to 'fullconnected2_W_eWV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_6' to 'fullconnected2_W_eXV' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_7' to 'fullconnected2_W_eYW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_8' to 'fullconnected2_W_eZW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'fullconnected2_W_fc2_9' to 'fullconnected2_W_e0W' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32ncxx': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32ncyx': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mux_732_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fullconnected2'.
+INFO: [HLS 200-111]  Elapsed time: 2.871 seconds; current allocated memory: 372.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/imagein' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_10' to 'cnn_imagein_conv1e1W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_11' to 'cnn_imagein_conv1e2W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_12' to 'cnn_imagein_conv1e3W' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_13' to 'cnn_imagein_conv1e4X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_14' to 'cnn_imagein_conv1e5X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_15' to 'cnn_imagein_conv1e6X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_16' to 'cnn_imagein_conv1e7X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_17' to 'cnn_imagein_conv1e8X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_18' to 'cnn_imagein_conv1e9X' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_19' to 'cnn_imagein_conv1faY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_20' to 'cnn_imagein_conv1fbY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_21' to 'cnn_imagein_conv1fcY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_22' to 'cnn_imagein_conv1fdY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_23' to 'cnn_imagein_conv1feY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_24' to 'cnn_imagein_conv1ffY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_25' to 'cnn_imagein_conv1fgY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_26' to 'cnn_imagein_conv1fhZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_27' to 'cnn_imagein_conv1fiZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_28' to 'cnn_imagein_conv1fjZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_29' to 'cnn_imagein_conv1fkZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_30' to 'cnn_imagein_conv1flZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv1_31' to 'cnn_imagein_conv1fmZ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_0' to 'cnn_imageout_convfn0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_1' to 'cnn_imageout_convfo0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_2' to 'cnn_imageout_convfp0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_3' to 'cnn_imageout_convfq0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_4' to 'cnn_imageout_convfr0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_5' to 'cnn_imageout_convfs0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_6' to 'cnn_imageout_convft1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_7' to 'cnn_imageout_convfu1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_8' to 'cnn_imageout_convfv1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_9' to 'cnn_imageout_convfw1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_10' to 'cnn_imageout_convfx1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_11' to 'cnn_imageout_convfy1' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_12' to 'cnn_imageout_convfz2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_13' to 'cnn_imageout_convfA2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_14' to 'cnn_imageout_convfB2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_15' to 'cnn_imageout_convfC2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_16' to 'cnn_imageout_convfD2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_17' to 'cnn_imageout_convfE2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_18' to 'cnn_imageout_convfF3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_19' to 'cnn_imageout_convfG3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_20' to 'cnn_imageout_convfH3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_21' to 'cnn_imageout_convfI3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_22' to 'cnn_imageout_convfJ3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_23' to 'cnn_imageout_convfK3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_24' to 'cnn_imageout_convfL3' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_25' to 'cnn_imageout_convfM4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_26' to 'cnn_imageout_convfN4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_0_27' to 'cnn_imageout_convfO4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_0' to 'cnn_imageout_convfP4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_1' to 'cnn_imageout_convfQ4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_2' to 'cnn_imageout_convfR4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_3' to 'cnn_imageout_convfS5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_4' to 'cnn_imageout_convfT5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_5' to 'cnn_imageout_convfU5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_6' to 'cnn_imageout_convfV5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_7' to 'cnn_imageout_convfW5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_8' to 'cnn_imageout_convfX5' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_9' to 'cnn_imageout_convfY6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_10' to 'cnn_imageout_convfZ6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_11' to 'cnn_imageout_convf06' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_12' to 'cnn_imageout_convf16' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_13' to 'cnn_imageout_convf26' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_14' to 'cnn_imageout_convf36' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_15' to 'cnn_imageout_convf47' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_16' to 'cnn_imageout_convf57' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_17' to 'cnn_imageout_convf67' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_18' to 'cnn_imageout_convf77' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_19' to 'cnn_imageout_convf87' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_20' to 'cnn_imageout_convf97' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_21' to 'cnn_imageout_convga8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_22' to 'cnn_imageout_convgb8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_23' to 'cnn_imageout_convgc8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_24' to 'cnn_imageout_convgd8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_25' to 'cnn_imageout_convge8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_26' to 'cnn_imageout_convgf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_1_27' to 'cnn_imageout_convgg8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_0' to 'cnn_imageout_convgh9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_1' to 'cnn_imageout_convgi9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_2' to 'cnn_imageout_convgj9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_3' to 'cnn_imageout_convgk9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_4' to 'cnn_imageout_convgl9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_5' to 'cnn_imageout_convgm9' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_6' to 'cnn_imageout_convgnb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_7' to 'cnn_imageout_convgob' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_8' to 'cnn_imageout_convgpb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_9' to 'cnn_imageout_convgqb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_10' to 'cnn_imageout_convgrb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_11' to 'cnn_imageout_convgsb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_12' to 'cnn_imageout_convgtb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_13' to 'cnn_imageout_convgub' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_14' to 'cnn_imageout_convgvb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_15' to 'cnn_imageout_convgwb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_16' to 'cnn_imageout_convgxb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_17' to 'cnn_imageout_convgyb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_18' to 'cnn_imageout_convgzb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_19' to 'cnn_imageout_convgAb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_20' to 'cnn_imageout_convgBb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_21' to 'cnn_imageout_convgCb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_22' to 'cnn_imageout_convgDb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_23' to 'cnn_imageout_convgEb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_24' to 'cnn_imageout_convgFb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_25' to 'cnn_imageout_convgGb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_26' to 'cnn_imageout_convgHb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_2_27' to 'cnn_imageout_convgIb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_0' to 'cnn_imageout_convgJb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_1' to 'cnn_imageout_convgKb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_2' to 'cnn_imageout_convgLb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_3' to 'cnn_imageout_convgMb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_4' to 'cnn_imageout_convgNb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgNb' is changed to 'cnn_imageout_convgNb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_5' to 'cnn_imageout_convgOb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgOb' is changed to 'cnn_imageout_convgOb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_6' to 'cnn_imageout_convgPb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgPb' is changed to 'cnn_imageout_convgPb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_7' to 'cnn_imageout_convgQb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgQb' is changed to 'cnn_imageout_convgQb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_8' to 'cnn_imageout_convgRb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgRb' is changed to 'cnn_imageout_convgRb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_9' to 'cnn_imageout_convgSb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgSb' is changed to 'cnn_imageout_convgSb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_10' to 'cnn_imageout_convgTb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgTb' is changed to 'cnn_imageout_convgTb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_11' to 'cnn_imageout_convgUb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgUb' is changed to 'cnn_imageout_convgUb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_12' to 'cnn_imageout_convgVb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgVb' is changed to 'cnn_imageout_convgVb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_13' to 'cnn_imageout_convgWb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgWb' is changed to 'cnn_imageout_convgWb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_14' to 'cnn_imageout_convgXb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgXb' is changed to 'cnn_imageout_convgXb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_15' to 'cnn_imageout_convgYb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgYb' is changed to 'cnn_imageout_convgYb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_16' to 'cnn_imageout_convgZb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convgZb' is changed to 'cnn_imageout_convgZb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_17' to 'cnn_imageout_convg0b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_18' to 'cnn_imageout_convg1b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_19' to 'cnn_imageout_convg2b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_20' to 'cnn_imageout_convg3b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_21' to 'cnn_imageout_convg4b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_22' to 'cnn_imageout_convg5b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_23' to 'cnn_imageout_convg6b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_24' to 'cnn_imageout_convg7b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_25' to 'cnn_imageout_convg8b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_26' to 'cnn_imageout_convg9b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_3_27' to 'cnn_imageout_convhab' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_0' to 'cnn_imageout_convhbb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_1' to 'cnn_imageout_convhcb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_2' to 'cnn_imageout_convhdb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_3' to 'cnn_imageout_convheb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_4' to 'cnn_imageout_convhfb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_5' to 'cnn_imageout_convhgb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_6' to 'cnn_imageout_convhhb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_7' to 'cnn_imageout_convhib' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_8' to 'cnn_imageout_convhjb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_9' to 'cnn_imageout_convhkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_10' to 'cnn_imageout_convhlb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_11' to 'cnn_imageout_convhmb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_12' to 'cnn_imageout_convhnb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_13' to 'cnn_imageout_convhob' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_14' to 'cnn_imageout_convhpb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_15' to 'cnn_imageout_convhqb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_16' to 'cnn_imageout_convhrb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_17' to 'cnn_imageout_convhsb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_18' to 'cnn_imageout_convhtb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_19' to 'cnn_imageout_convhub' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_20' to 'cnn_imageout_convhvb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_21' to 'cnn_imageout_convhwb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_22' to 'cnn_imageout_convhxb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_23' to 'cnn_imageout_convhyb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_24' to 'cnn_imageout_convhzb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_25' to 'cnn_imageout_convhAb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhAb' is changed to 'cnn_imageout_convhAb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_26' to 'cnn_imageout_convhBb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhBb' is changed to 'cnn_imageout_convhBb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_4_27' to 'cnn_imageout_convhCb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhCb' is changed to 'cnn_imageout_convhCb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_0' to 'cnn_imageout_convhDb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhDb' is changed to 'cnn_imageout_convhDb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_1' to 'cnn_imageout_convhEb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhEb' is changed to 'cnn_imageout_convhEb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_2' to 'cnn_imageout_convhFb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhFb' is changed to 'cnn_imageout_convhFb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_3' to 'cnn_imageout_convhGb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhGb' is changed to 'cnn_imageout_convhGb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_4' to 'cnn_imageout_convhHb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhHb' is changed to 'cnn_imageout_convhHb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_5' to 'cnn_imageout_convhIb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhIb' is changed to 'cnn_imageout_convhIb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_6' to 'cnn_imageout_convhJb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhJb' is changed to 'cnn_imageout_convhJb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_7' to 'cnn_imageout_convhKb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhKb' is changed to 'cnn_imageout_convhKb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_8' to 'cnn_imageout_convhLb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhLb' is changed to 'cnn_imageout_convhLb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_9' to 'cnn_imageout_convhMb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhMb' is changed to 'cnn_imageout_convhMb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_10' to 'cnn_imageout_convhNb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhNb' is changed to 'cnn_imageout_convhNb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_11' to 'cnn_imageout_convhOb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhOb' is changed to 'cnn_imageout_convhOb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_12' to 'cnn_imageout_convhPb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhPb' is changed to 'cnn_imageout_convhPb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_13' to 'cnn_imageout_convhQb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhQb' is changed to 'cnn_imageout_convhQb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_14' to 'cnn_imageout_convhRb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhRb' is changed to 'cnn_imageout_convhRb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_15' to 'cnn_imageout_convhSb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhSb' is changed to 'cnn_imageout_convhSb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_16' to 'cnn_imageout_convhTb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhTb' is changed to 'cnn_imageout_convhTb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_17' to 'cnn_imageout_convhUb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhUb' is changed to 'cnn_imageout_convhUb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_18' to 'cnn_imageout_convhVb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhVb' is changed to 'cnn_imageout_convhVb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_19' to 'cnn_imageout_convhWb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhWb' is changed to 'cnn_imageout_convhWb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_20' to 'cnn_imageout_convhXb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhXb' is changed to 'cnn_imageout_convhXb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_21' to 'cnn_imageout_convhYb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhYb' is changed to 'cnn_imageout_convhYb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_22' to 'cnn_imageout_convhZb' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'cnn_imageout_convhZb' is changed to 'cnn_imageout_convhZb_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_23' to 'cnn_imageout_convh0b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_24' to 'cnn_imageout_convh1b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_25' to 'cnn_imageout_convh2b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_26' to 'cnn_imageout_convh3b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv1_5_27' to 'cnn_imageout_convh4b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_0' to 'cnn_imageout_convh5b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_1' to 'cnn_imageout_convh6b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_2' to 'cnn_imageout_convh7b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_3' to 'cnn_imageout_convh8b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_4' to 'cnn_imageout_convh9b' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_5' to 'cnn_imageout_conviab' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_6' to 'cnn_imageout_convibb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_7' to 'cnn_imageout_convicb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_8' to 'cnn_imageout_convidb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_9' to 'cnn_imageout_convieb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_10' to 'cnn_imageout_convifb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_11' to 'cnn_imageout_convigb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_12' to 'cnn_imageout_convihb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_13' to 'cnn_imageout_conviib' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_14' to 'cnn_imageout_convijb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imageout_conv2_15' to 'cnn_imageout_convikb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_10' to 'cnn_imagein_conv3ilb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_11' to 'cnn_imagein_conv3imb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_12' to 'cnn_imagein_conv3inb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_13' to 'cnn_imagein_conv3iob' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_14' to 'cnn_imagein_conv3ipb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_imagein_conv3_15' to 'cnn_imagein_conv3iqb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32nczy': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_mux_104_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn'.
+INFO: [HLS 200-111]  Elapsed time: 16.539 seconds; current allocated memory: 391.242 MB.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerbkb_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercud_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerdEe_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerfYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerg8j_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'Convolution_layerhbi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercAy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercBy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercCy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercDy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercEy_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercFz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercGz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercHz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercIz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercJz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercKz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercLz_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercMA_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercNA_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercOA_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layercPA_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'Convolution_layercQA_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereoQ_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerepQ_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereqQ_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layererQ_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layeresQ_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layeretR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereuR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerevR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerewR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerexR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereyR_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layerezS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereAS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereBS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereCS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereDS_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convolution_layereES_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'cnn_urem_14ns_4nseOU_div'
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_bieGT_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eHT_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eIT_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eJT_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eKT_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eLT_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eMU_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected1_W_eNU_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_bieQU_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eRU_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eSV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eTV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eUV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eVV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eWV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eXV_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eYW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_eZW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fullconnected2_W_e0W_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imagein_conv1_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imageout_convfn0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imagein_conv2_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imageout_convh5b_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imageout_conv3_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_imagein2_0_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:12 ; elapsed = 00:04:20 . Memory (MB): peak = 616.078 ; gain = 559.035
+INFO: [SYSC 207-301] Generating SystemC RTL for cnn.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn.
+INFO: [HLS 200-112] Total elapsed time: 259.875 seconds; peak allocated memory: 391.242 MB.
